@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  background-color: grey;
+}
+
+.container {
+  max-width: 1200px;
+  background-color: #fff;
+  margin: 20px auto;
+  height: 100vh;
+  position: relative;
+
+  /*box-shadow: 15px 0 15px -15px inset, -15px 0 15px -15px inset;*/
+}
+.container:before {
+  box-shadow: -15px 0 15px -15px inset;
+  content: " ";
+  height: 100%;
+  left: -15px;
+  position: absolute;
+  top: 0;
+  width: 15px;
+}
+.container:after {
+  box-shadow: 10px 0 10px 0px inset;
+  content: " ";
+  height: 100%;
+  right: -15px;
+  position: absolute;
+  top: 0;
+  width: 15px;
+}
